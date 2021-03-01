@@ -34,7 +34,7 @@ header {
             font-family: var.$font-stack-primary;
             font-size: 1.5rem;
             padding: 0.5em;
-            width: 15rem;
+            width: 30rem;
             color: var.$font-color;
         }
     
@@ -60,7 +60,6 @@ header {
 }
 
 
-
 .colors_2 {
     @include mix.flex-column;
     
@@ -74,11 +73,9 @@ header {
         width:33%;
     }
 
-    // &__darken {
-    //     @include mix.darken;
-    //     }
-   
-
+    .color__darken {
+        @include mix.darken;
+    }
 }
 
 }

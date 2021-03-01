@@ -1,3 +1,8 @@
 // This is where you can import other stylesheets or write your scss code
+
+@forward "./layout";
+@forward "./variables";
+@forward "./mixins";
+
 @import "../../node_modules/bootstrap/scss/bootstrap";
 

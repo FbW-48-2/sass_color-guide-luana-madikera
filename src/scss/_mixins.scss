@@ -36,6 +36,5 @@
 // }
 
 @mixin darken {
-    background-color: $color-one;
     background: darken (var.$color-one, 10%);
 }

@@ -1,4 +1,100 @@
 @charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+header {
+  text-align: center;
+  height: 9rem;
+}
+header h1 {
+  font-size: 4rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 2.5rem;
+  color: rgba(0, 0, 0, 0.603);
+}
+
+.colors {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+.colors .color {
+  height: 100%;
+  width: 15rem;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem;
+  border-top: 0;
+  border-left: 1px solid lightgrey;
+  border-right: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  border-radius: 8px;
+}
+.colors .color__details {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.5rem;
+  padding: 0.5em;
+  width: 30rem;
+  color: rgba(0, 0, 0, 0.603);
+}
+.colors .color__one {
+  height: 9rem;
+  width: 15rem;
+  background-color: #ffc83f;
+}
+.colors .color__two {
+  height: 9rem;
+  width: 15rem;
+  background-color: #fa5e5b;
+}
+.colors .color__three {
+  height: 9rem;
+  width: 15rem;
+  background-color: #1d508d;
+}
+.colors .color__four {
+  height: 9rem;
+  width: 15rem;
+  background-color: #684e79;
+}
+
+@media (min-width: 768px) {
+  .colors {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.colors_2 {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+.colors_2 .color_2 {
+  height: 100%;
+  width: 15rem;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem;
+}
+.colors_2 .color_2 .color_2_div {
+  width: 33%;
+}
+.colors_2 .color_2 .color__darken {
+  background: darken #ffc83f, 10%;
+}
+
 /*!
  * Bootstrap v4.6.0 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
