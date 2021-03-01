@@ -1,0 +1,41 @@
+@use "./variables" as var;
+
+// mixins
+
+@mixin color($bg-color) {
+    height: 9rem;
+    width: 15rem;
+    background-color: $bg-color;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-row {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin border {
+    border-top: 0;
+    border-left: 1px solid lightgrey;
+    border-right: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    border-radius: 8px;
+}
+
+// @mixin flex-column-left {
+//     display: flex;
+//     flex-flow: column nowrap;
+// }
+
+@mixin darken {
+    background-color: $color-one;
+    background: darken (var.$color-one, 10%);
+}
