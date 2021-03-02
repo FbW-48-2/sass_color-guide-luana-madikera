@@ -1,13 +1,6 @@
 @use "./variables" as var;
 
 // mixins
-
-@mixin color($bg-color) {
-    height: 9rem;
-    width: 15rem;
-    background-color: $bg-color;
-}
-
 @mixin flex-column {
     display: flex;
     flex-flow: column nowrap;
@@ -15,26 +8,28 @@
     justify-content: center;
 }
 
-@mixin flex-row {
+@mixin flex-row  {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
 }
 
-@mixin border {
-    border-top: 0;
-    border-left: 1px solid lightgrey;
-    border-right: 1px solid lightgray;
-    border-bottom: 1px solid lightgray;
-    border-radius: 8px;
+@mixin color($bg-color) {
+    height: 9rem;
+    width: 15rem;
+    background-color: $bg-color;
 }
 
-// @mixin flex-column-left {
-//     display: flex;
-//     flex-flow: column nowrap;
-// }
+@mixin shade($bg-color) {
+    height: 12rem;
+    width: 5rem;
+    background-color: $bg-color;
+}
 
-@mixin darken {
-    background: darken (var.$color-one, 10%);
+@mixin border {
+    border-radius: 0 0 .5rem .5rem;
+    border-bottom: 1px solid var.$border-color;
+    border-right: 1px solid var.$border-color;
+    border-left: 1px solid var.$border-color;
 }
